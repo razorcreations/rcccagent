@@ -1,0 +1,14 @@
+[Unit]
+Description=Razor Certbot Certificate Checker Agent
+After=network.target
+
+[Service]
+ExecStart=/opt/rcccagent/rcccagent.php
+Restart=always
+User=root
+StandardOutput=append:/var/log/rcccagent.log
+StandardError=append:/var/log/rcccagent.err
+
+[Install]
+WantedBy=multi-user.target
+
