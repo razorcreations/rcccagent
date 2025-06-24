@@ -1,7 +1,5 @@
 # Razor Certbot Certificate Checker Agent
 
-## Agent Control
-
 ```bash
 # Get the agent status
 sudo systemctl status rcccagent
@@ -14,4 +12,3 @@ sudo systemctl stop rcccagent
 sudo systemctl disable rcccagent.service
 sudo systemctl daemon-reload
 ```
-
