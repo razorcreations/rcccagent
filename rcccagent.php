@@ -107,7 +107,8 @@ while (true) {
 				curl_setopt($ch, CURLOPT_HTTPHEADER, [
 					'Content-Type: application/json',
 					'x-rcccagent-hostname: '.gethostname(),
-					'x-rcccagent-token: '.$config['token']
+					'x-rcccagent-token: '.$config['token'],
+					'User-Agent: rcccagent-bot',
 				]);
 				curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 	
